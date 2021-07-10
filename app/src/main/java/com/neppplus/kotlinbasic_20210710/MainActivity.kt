@@ -15,7 +15,14 @@ class MainActivity : AppCompatActivity() {
 
 //            버튼이 눌리는지 로그를 찍어보자.
             Log.d("메인화면", "테스트 버튼 클릭됨")
+            Log.i("메인화면", "로그 두줄이 찍히게.")
 
+
+
+        }
+
+        secondBtn.setOnClickListener {
+            Log.e("메인화면", "두번째 버튼 클릭")
         }
 
     }
