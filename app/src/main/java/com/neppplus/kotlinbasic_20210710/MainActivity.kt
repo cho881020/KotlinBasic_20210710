@@ -3,6 +3,7 @@ package com.neppplus.kotlinbasic_20210710
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         secondBtn.setOnClickListener {
             Log.e("메인화면", "두번째 버튼 클릭")
+        }
+
+        toastBtn.setOnClickListener {
+            Toast.makeText(this, "연습용 토스트", Toast.LENGTH_SHORT).show()
         }
 
     }
